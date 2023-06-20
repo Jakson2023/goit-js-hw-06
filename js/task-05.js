@@ -4,7 +4,7 @@ const nameOtput = document.getElementById("name-output");
 nameInput.addEventListener("input", inputClick);
 function inputClick(evt) {
     const inputValue = evt.target.value;
-    if (inputValue === "") {
+    if (inputValue.trim() === "") {
         nameOtput.textContent = "Anonymous";
     } else {
         nameOtput.textContent = inputValue;

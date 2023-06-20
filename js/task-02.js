@@ -7,10 +7,11 @@ const ingredients = [
     "Condiments",
 ];
 const ul = document.getElementById("ingredients");
+const liArr = [];
 ingredients.forEach((ingredient) => {
     const li = document.createElement("li");
     li.innerText = ingredient;
     li.classList.add("item");
-    ul.append(li);
-    console.log(ul);
+    liArr.push(li);
 });
+ul.append(...liArr);
